@@ -1,26 +1,19 @@
-// Creates and empty object names localeSettings
+// Creates and empty object named localeSettings
 const localeSettings = {};
-// Utilise the Day.JS method to set to default settings
+// Utilise the Day.JS library to set to default settings
 dayjs.locale(localeSettings);
-
-// Update Time Function - Update Date and Time Elements
+// Time Function
 $(function () {
+  // Displays current Date and Time at the top of the calendar
   function updateTime() {
     const dateElement = $('#date');
-    const timeElement = $('#time');
-
     const currentDate = dayjs().format('dddd, MMMM D, YYYY');
-    const currentTime = dayjs().format('hh:mm:ss A');
-
     dateElement.text(currentDate);
-    timeElement.text(currentTime);
   }
-
+// color codes time blocks based on current time. Colours differentiate Past, Present & Future. 
   const currentHour = dayjs().hour();
-
   $('.time-block').each(function () {
     const hourBlock = parseInt($(this).attr('id').split('-')[1]);
-
     if (hourBlock < currentHour) {
       $(this).removeClass('present future').addClass('past');
     } else if (hourBlock === currentHour) {
@@ -29,17 +22,9 @@ $(function () {
       $(this).removeClass('past present').addClass('future');
     }
   });
-
-  // Call updateTime initially to set the initial values
+  // Call updateTime Function
   updateTime();
-
-  // Use setInterval to update the time every second
-  setInterval(updateTime, 1000);
 });
-
-
-
-
 
 
 
@@ -68,3 +53,4 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+

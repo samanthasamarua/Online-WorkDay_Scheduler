@@ -21,9 +21,9 @@ When the user opens the application, the current day and date is displayed at th
 <img src="/Assets/Images/Work Day Scheduler _1.png" alt="Work Day Scheduler">
 
 # References:
-Lectures on JavaScript & Third-Party API
-https://www.youtube.com - JavaScript & Local Storage
-https://jQuery.com
-MDN Web Docs on Javascript and Third-Party APIs
+1. Lectures on JavaScript & Third-Party API
+2. https://www.youtube.com - JavaScript & Local Storage
+3. https://jQuery.com
+4. MDN Web Docs on Javascript and Third-Party APIs
 
 # Deployment Link:

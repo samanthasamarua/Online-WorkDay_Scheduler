@@ -43,9 +43,10 @@ $("#hour-14 .description").val(localStorage.getItem("14"));
 $("#hour-15 .description").val(localStorage.getItem("15"));
 $("#hour-16 .description").val(localStorage.getItem("16"));
 $("#hour-17 .description").val(localStorage.getItem("17"));
+
 // clears data when backspace is pressed
 $(".clearBtn").click(function (event) {
   event.preventDefault();
-  $('.description').val(''); // Clear all textareas
+  $('.description').val(''); // Clear all text areas
   localStorage.clear(); // Clear local storage
 });

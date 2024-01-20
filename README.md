@@ -27,3 +27,4 @@ When the user opens the application, the current day and date is displayed at th
 4. MDN Web Docs on Javascript and Third-Party APIs
 
 # Deployment Link:
+https://samanthasamarua.github.io/Online-WorkDay_Scheduler/
